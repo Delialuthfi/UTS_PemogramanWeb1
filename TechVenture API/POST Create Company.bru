@@ -1,0 +1,28 @@
+meta {
+  name: POST Create Company
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost/techventure-website/api/index.php
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "name": "Netflix Inc",
+    "category": "Entertainment",
+    "description": "Netflix adalah layanan streaming berbasis langganan yang menawarkan film, serial TV, dan konten original",
+    "image_url": "https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?w=800",
+    "founded_year": 1997,
+    "employees": 12800,
+    "website": "https://netflix.com"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

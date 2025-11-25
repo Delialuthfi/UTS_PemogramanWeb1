@@ -1,0 +1,28 @@
+meta {
+  name: PUT Update Company
+  type: http
+  seq: 4
+}
+
+put {
+  url: http://localhost/techventure-website/api/index.php/7
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "name": "Netflix Inc - Updated",
+    "category": "Streaming",
+    "description": "Netflix adalah platform streaming terkemuka dengan konten original berkualitas tinggi",
+    "image_url": "https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?w=800",
+    "founded_year": 1997,
+    "employees": 13000,
+    "website": "https://netflix.com"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
